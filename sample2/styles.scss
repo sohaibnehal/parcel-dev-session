@@ -1,0 +1,34 @@
+
+//Variables
+$color_white: #fff;
+$text_font_family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+$text_font_size: 2rem;
+$background_image: 'https://res.cloudinary.com/df1f6ovlx/image/upload/v1518504041/IMG_1507_x49bwm.jpg';
+
+html, body{
+  height: 100%;
+  margin: 0;  }
+
+.bg {
+  background-image: url($background_image);
+  height: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.header-text {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-60%, -90%);
+  color: $color_white;
+  font-family: $text_font_family;
+  font-size: $text_font_size;  }
+
+
+
+
+
