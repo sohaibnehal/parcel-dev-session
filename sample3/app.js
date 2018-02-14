@@ -16,13 +16,12 @@ app.use('/api', api);
 
     // use parcel bundler for watch and HMR
     if (process.env.WORK_ENV !== 'production') {
-        const bundler = new Bundler('client/index/html', {
+        const bundler = new Bundler('sample3/index.html', {
             watch: true,
         });
         bundler.bundle();
         app.use(bundler.middleware());
     }
-
 
 if (process.env.WORK_ENV === 'production') {
     app.use(express.static(path.join(__dirname, 'sample3/dist')));
